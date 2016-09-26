@@ -1,6 +1,5 @@
 package nl.paragonict.ee7example.log;
 
-import javax.annotation.Priority;
 import javax.interceptor.AroundInvoke;
 import javax.interceptor.Interceptor;
 import javax.interceptor.InvocationContext;
@@ -9,7 +8,6 @@ import nl.paragonict.ee7example.annotation.MethodLogger;
 
 @Interceptor
 @MethodLogger
-@Priority(Interceptor.Priority.APPLICATION)
 public class MethodLogInterceptor {
 
 	@AroundInvoke
